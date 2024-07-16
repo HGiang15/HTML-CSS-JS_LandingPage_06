@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7264D6;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #696D76;
+    --label--color-2: #212832;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn {}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+/* ============== Header ============== */
