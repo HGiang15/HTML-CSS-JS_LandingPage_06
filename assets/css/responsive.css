@@ -1,4 +1,19 @@
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mobile-header {
+        display: none;
+    }
+
+    /* 
+    .header .container,
+    .cta .container,
+    .footer .container {
+        max-width: 1330px;
+    } */
+}
+
 /* PC */
+/* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     .mobile-header {
         display: none;
@@ -100,6 +115,7 @@
 
 }
 
+/*  Medium devices (tablets, 768px and up) */
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .show-on-mobile {
@@ -111,6 +127,7 @@
     }
 }
 
+/* `md` applies to small devices (landscape phones, less than 768px) */
 /* Mobile */
 @media screen and (max-width: 767.98px) {
 
@@ -148,3 +165,6 @@
     /* Hero */
 
 }
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}

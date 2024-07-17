@@ -55,3 +55,71 @@ button {
 }
 
 /* ============== Header ============== */
+.header {
+    padding-top: 20px;
+    background: #FBFAFF;
+}
+
+.header-fixed {
+    position: sticky;
+    top: -9px;
+    z-index: 4;
+}
+
+.header__inner {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__email {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__email-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgb(93 59 238 / 20%);
+}
+
+.header__email-address {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    color: #080415;
+}
+
+.header__email-address::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    height: 1px;
+    background: currentColor;
+}
+
+.header__inner .logo {
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 21.5px;
+    font-size: 1.8rem;
+    color: #51586A;
+}
