@@ -37,7 +37,25 @@ button {
     font-family: inherit;
 }
 
-.btn {}
+.btn {
+    --height: 62px;
+    display: inline-block;
+    min-width: 170px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #fdfdfd;
+    background: #5d3bee;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66667;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
 
 .line-clamp {
     display: -webkit-box;
@@ -52,6 +70,32 @@ button {
 
 .line-clamp.line-3 {
     --line-clamp: 3;
+}
+
+.section-heading {
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.1785;
+    color: #080415;
+}
+
+.section-desc-1 {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586A;
+}
+
+.section-desc-2 {
+    font-size: 1.6rem;
+    line-height: 1.4375;
+    color: #51586A;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #080415;
 }
 
 /* ============== Header ============== */
@@ -122,4 +166,192 @@ button {
     padding: 8px 21.5px;
     font-size: 1.8rem;
     color: #51586A;
+}
+
+/* ============== Hero ============== */
+.hero {
+    background: #FBFAFF;
+    position: relative;
+}
+
+.hero__decor-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero__inner {
+    align-items: center;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    height: auto;
+    width: 92.7%;
+    /* width: 514px; */
+    /* height: 705px; */
+    object-fit: cover;
+}
+
+.hero__decor {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: -11%;
+    bottom: 0;
+}
+
+.hero__content {
+    margin-top: 20%;
+    width: 85%;
+    margin-left: auto;
+}
+
+.hero__heading {
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+    color: #080415;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 370px;
+}
+
+.hero__cta {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.hero__link {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    color: #080415;
+}
+
+.hero__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6.1px;
+    height: 1px;
+    background: currentColor;
+}
+
+.hero__socials {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__socials-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.875;
+    color: #51586A;
+}
+
+.hero__socials-list {
+    margin-left: 15px;
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__socials-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(8 4 21 / 10%);
+    cursor: pointer;
+}
+
+.hero__socials-item:hover .hero__socials-icon {
+    filter: brightness(0) invert(1);
+}
+
+.hero__socials--tooltip {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: translateX(50%);
+    transform: translateY(-15px);
+    padding: 10px 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.hero__socials--tooltip-2 {
+    left: -21px;
+}
+
+.hero__socials--tooltip-3 {
+    left: -32px;
+}
+
+.hero__socials--tooltip-4 {
+    left: -21px;
+}
+
+.hero__socials--tooltip-5 {
+    left: -21px;
+}
+
+.hero__socials-item-1:hover,
+.hero__socials--tooltip-1 {
+    background: #145fd2;
+}
+
+.hero__socials-item-2:hover,
+.hero__socials--tooltip-2 {
+    background: #3f9ced;
+}
+
+.hero__socials-item-3:hover,
+.hero__socials--tooltip-3 {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.hero__socials-item-4:hover,
+.hero__socials--tooltip-4 {
+    background: #1e2125;
+}
+
+.hero__socials-item-5:hover,
+.hero__socials--tooltip-5 {
+    background: #26282b;
+}
+
+.hero__socials-item-1 svg,
+.hero__socials-item-2 svg {
+    color: #000;
+}
+
+.hero__socials-item:hover .hero__socials--tooltip {
+    top: -80%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }

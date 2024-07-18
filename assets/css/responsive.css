@@ -35,33 +35,52 @@
 /* Tablet & Mobile */
 @media screen and (max-width: 991.98px) {
 
-    /* -- Header -- */
-    .navbar {
-        position: relative;
-    }
-
-    .logo {
-        position: absolute;
-        top: 40%;
-        left: 48%;
-        transform: translate(-50%, 50%);
-    }
-
-    .navbar__list {
+    .hidden-on-mobile {
         display: none;
     }
 
-    .toggle-menu svg {
-        display: block;
-        width: 24px;
-        color: #666;
+    /* -- Header -- */
+    .mobile-header {
+        padding: 20px;
+    }
+
+    .mobile-header-fixed {
+        position: sticky;
+        top: -9px;
+        background: #fff;
+        z-index: 4;
+    }
+
+    .mobile-header__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__email-mobile-icon {
+        width: 16.696px;
+        height: 11.13px;
+    }
+
+    .header__email-mobile-wrap {
+        margin: 0 10px 0 auto;
+    }
+
+    .toggle-menu,
+    .header__email-mobile-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 1px solid rgb(93 59 238 / 20%);
     }
 
     .menu-overlay {
         position: fixed;
         inset: 0;
         background: rgba(0, 0, 0, 0.3);
-        z-index: 2;
+        z-index: 3;
         opacity: 0;
         visibility: hidden;
         transition: 0.6s ease;
@@ -69,11 +88,11 @@
 
     .menu-drawer {
         position: fixed;
-        inset: 0 40% 0 0;
+        inset: 0 0 0 40%;
         background: #fff;
-        z-index: 2;
-        padding: 60px;
-        transform: translateX(-100%);
+        z-index: 4;
+        padding: 30px;
+        transform: translateX(100%);
         transition: 0.6s ease;
     }
 
@@ -81,6 +100,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .logo-mobile {
+        width: 66px;
     }
 
     .menu-drawer .x-mark svg {
@@ -93,7 +116,7 @@
 
     .menu-drawer ul a {
         display: block;
-        padding: 20px 0;
+        padding: 20px;
         font-weight: 500;
         color: #333;
     }
@@ -105,10 +128,6 @@
 
     .menu-checkbox:checked~.menu-drawer {
         transform: translateX(0);
-    }
-
-    .separate {
-        border-top: 1.5px solid #ebebeb;
     }
 
     /* Hero */
@@ -138,28 +157,8 @@
 
     /* -- Header -- */
     .menu-drawer {
-        inset: 0 25% 0 0;
+        inset: 0 0 0 30%;
         padding: 40px;
-    }
-
-    .logo {
-        left: 50%;
-        width: 110px;
-        top: 50%;
-        transform: translate(-50%);
-    }
-
-    .header-action {
-        display: none;
-    }
-
-    .header__inner {
-        justify-content: space-between;
-    }
-
-    .bell {
-        display: block;
-        width: 20px;
     }
 
     /* Hero */
