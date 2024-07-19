@@ -75,7 +75,7 @@ button {
 .section-heading {
     font-size: 5.6rem;
     font-weight: 500;
-    line-height: 1.1785;
+    line-height: 1.18;
     color: #080415;
 }
 
@@ -102,6 +102,14 @@ button {
 .header {
     padding-top: 20px;
     background: #FBFAFF;
+}
+
+.header__container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-fixed {
@@ -354,4 +362,119 @@ button {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+/* ============== Client ============== */
+.client {
+    margin-top: 100px;
+}
+
+.client__heading {
+    position: relative;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19048;
+    color: #080415;
+}
+
+.client__heading::before {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: -99px;
+    width: 86px;
+    height: 2px;
+    background: #5d3bee;
+}
+
+.client__list {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 66px;
+}
+
+.client__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 36px;
+}
+
+.client__item-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.client__name {
+    color: #080415;
+}
+
+.client__logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.client__logo-wrap--bg {
+    background: #fbfaff;
+}
+
+/* ============== Service ============== */
+.service {
+    margin-top: 133px;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 534px;
+    margin: 20px auto 0 auto;
+}
+
+.service__list {
+    margin-top: 60px;
+}
+
+.service-item {}
+
+.service-item__wrap {
+    padding: 33px 38px 32px 43px;
+    background: #fbfaff;
+    transition: 0.3s ease-in-out;
+}
+
+.service-item__wrap:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 1px 21px 35px -25px rgba(0, 0, 0, 0.75);
+}
+
+.service-item__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid rgb(8 4 21 / 5%);
+}
+
+.service-item__img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-item__title {
+    margin-top: 22px;
+}
+
+.service-item__desc {
+    margin-top: 15px;
 }
