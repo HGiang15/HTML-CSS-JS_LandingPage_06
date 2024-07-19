@@ -38,8 +38,14 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
 
-    <!-- Animation -->
+    <!-- Animation AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animation AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Animation Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -547,6 +553,69 @@
 
         <!-- About -->
         <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                        <div class="about__top">
+                            <div
+                                class="about__greeting-wrap animate__animated animate__shakeY animate__slower 2s animate__infinite">
+                                <p class="section-title about__greeting-title">Hey,,,,It’s Giang</p>
+                                <img src="./assets/icons/about-icon-01.svg" alt="" class="about__greeting-icon">
+                            </div>
+                            <h2 class="section-heading about__top-heading">Frontend Developer</h2>
+                            <p class="section-desc-1 about__top-desc">
+                                Frontend Developer crafting responsive and
+                                interactive websites. Passionate about modern web technologies and user-centric design
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 col-12">
+                        <div class="about__stats">
+                            <div class="about__stats-list">
+                                <!-- About item 1 -->
+                                <div class="about__stats-item">
+                                    <strong class="about__stats-number">03+</strong>
+                                    <p class="section-desc-1 about__stats-desc">Years Experience</p>
+                                </div>
+
+                                <!-- About item 2 -->
+                                <div class="about__stats-item">
+                                    <strong class="about__stats-number">21+</strong>
+                                    <p class="section-desc-1 about__stats-desc">Features & Awards</p>
+                                </div>
+
+                                <!-- About item 3 -->
+                                <div class="about__stats-item">
+                                    <strong class="about__stats-number">96%</strong>
+                                    <p class="section-desc-1 about__stats-desc">Clients Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="about__video-wrap">
+                            <video src="./assets/video/about-video.mp4" poster="./assets/img/about-1.png"
+                                class="about__video"></video>
+                            <button class="btn about__play">
+                                <img src="./assets/icons/about-play.svg" alt="" class="about__play-icon">
+                            </button>
+                            <div class="about__intro">
+                                <p class="about__intro-label">INTRO VIDEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback -->
+        <section class="feedback">
             <div class="container">
 
             </div>
