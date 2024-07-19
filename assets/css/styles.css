@@ -308,7 +308,7 @@ button {
     pointer-events: none;
     transition: all 0.3s;
     border-radius: 10px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero__socials--tooltip-2 {
@@ -478,3 +478,92 @@ button {
 .service-item__desc {
     margin-top: 15px;
 }
+
+/* ============== Work ============== */
+.work {
+    margin-top: 140px;
+    padding-bottom: 86px;
+    background: #5d3bee;
+}
+
+.work__top {
+    align-items: center;
+    padding: 86px 0 70px;
+}
+
+.work__heading {
+    max-width: 468px;
+    color: var(--white-color);
+}
+
+.work__desc {
+    max-width: 370px;
+    color: var(--white-color);
+}
+
+.work__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.work__item {
+    padding: 24px 23px 23px 34px;
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+    background: #fbfaff;
+    background-image: url(../img/work-bg.png);
+    background-repeat: no-repeat;
+    background-size: 72.8%;
+    background-position: 104.3% 88.3%;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.work__item:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 51px 7px rgba(0, 0, 0, 0.75);
+}
+
+.work__item-info {
+    width: 85%;
+}
+
+.work__item-desc {
+    margin-top: 10px;
+}
+
+.work__item-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    text-decoration: underline;
+    color: #080415;
+}
+
+.work__item-media {
+    display: block;
+    height: 100%;
+}
+
+.work__item-image {
+    height: 100%;
+}
+
+.work__item-img {
+    width: 246px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work__cta-btn {
+    margin: 80px auto 0;
+    background: #fff;
+    color: #080415;
+}
+
+/* ============== About ============== */
+.about {}
